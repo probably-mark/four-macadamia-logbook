@@ -1,0 +1,24 @@
+{
+  "name": "four-macadamia-logbook",
+  "dockerFile": "Dockerfile",
+  "appPort": 6001,
+  "runArgs": ["--name", "four-macadamia-logbook"],
+  // "extensions": ["dbaeumer.vscode-eslint"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+"postCreateCommand": "npm install",
+"customizations": {
+  "vscode": {
+    "extensions": [
+      "cval.pastel-theme",
+      "angelenelm.animal-crossing-vscode-icon-theme",
+      "svelte.svelte-vscode",
+      "streetsidesoftware.code-spell-checker"
+    ]
+  }
+},
+  // Comment out the next line to run as root instead. Linux users, update
+  // Dockerfile with your user's UID/GID if not 1000.
+  // "runArgs": ["-u", "node"]
+}
