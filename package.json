@@ -47,7 +47,9 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.6.5",
+    "dotenv": "^16.5.0",
     "highlight.js": "11.9.0",
+    "pg": "^8.16.0",
     "svelte-persisted-store": "^0.9.4"
   }
 }
